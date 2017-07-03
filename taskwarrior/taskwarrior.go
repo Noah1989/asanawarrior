@@ -120,7 +120,7 @@ func getTasks(filter string) ([]task, error) {
 }
 
 func GetTasks() ([]x.WarriorTask, error) {
-	tasks, err := getTasks("")
+	tasks, err := getTasks("+asana")
 	if err != nil {
 		return nil, err
 	}
@@ -146,6 +146,7 @@ func generateTags(wt x.WarriorTask) []string {
 	if len(wt.Section) > 0 {
 		tags = append(tags, "_"+wt.Section)
 	}
+	tags = append(tags, "asana")
 	return tags
 }
 

@@ -9,9 +9,9 @@ import (
 
 	"github.com/0xAX/notificator"
 	"github.com/boltdb/bolt"
-	"github.com/manishrjain/asanawarrior/asana"
-	"github.com/manishrjain/asanawarrior/taskwarrior"
-	"github.com/manishrjain/asanawarrior/x"
+	"github.com/noah1989/asanawarrior/asana"
+	"github.com/noah1989/asanawarrior/taskwarrior"
+	"github.com/noah1989/asanawarrior/x"
 	"github.com/pkg/errors"
 )
 
